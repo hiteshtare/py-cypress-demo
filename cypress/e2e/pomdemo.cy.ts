@@ -2,16 +2,37 @@ import { LoginPage } from './pages/loginPage';
 
 const loginPage = new LoginPage();
 
-it('POM Demo', () => {
+beforeEach(() => {
   cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+})
 
+describe('All Login Tests', () => {
+
+  it('Login with Valid credentials', () => {
+    loginPage.enterUsername('Admin');
+    loginPage.enterPassword('admin123');
+  
+    loginPage.clickLogin();
+  
+    cy.get('.oxd-userdropdown-tab').click();
+  });
+  
+  
+  it('Login with Invalid username', () => {
+    loginPage.enterUsername('AdminPY');
+    loginPage.enterPassword('admin123');
+  
+    loginPage.clickLogin();
+  
+    cy.get('.oxd-userdropdown-tab').click();
+  });
+});
+
+it('Login with Invalid password', () => {
   loginPage.enterUsername('Admin');
-  loginPage.enterPassword('admin123');
+  loginPage.enterPassword('admin1234');
 
   loginPage.clickLogin();
 
-  // cy.get('input[name="username"]').type('Admin');
-  // cy.get('input[name="password"]').type('admin123');
-  // cy.wait(1000);
-  // cy.get('.oxd-button').click();
+  cy.get('.oxd-userdropdown-tab').click();
 });
