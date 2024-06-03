@@ -1,0 +1,155 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2024-06-03T07:30:31.074Z",
+    "end": "2024-06-03T07:30:54.371Z",
+    "duration": 23297,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c8acbb93-cef6-4c5b-9fd9-a10e9e81f97b",
+      "title": "",
+      "fullFile": "cypress/e2e/pomdemo.cy.ts",
+      "file": "cypress/e2e/pomdemo.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Login with Invalid password",
+          "fullTitle": "Login with Invalid password",
+          "timedOut": null,
+          "duration": 10072,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('admin1234');\nloginPage.clickLogin();\ncy.get('.oxd-userdropdown-tab').click();",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 3000ms: Expected to find element: `.oxd-userdropdown-tab`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 3000ms: Expected to find element: `.oxd-userdropdown-tab`, but never found it.\n    at Context.eval (webpack://py-cypress-hitesh-demo/./cypress/e2e/pomdemo.cy.ts:26:0)",
+            "diff": null
+          },
+          "uuid": "11318d9b-4fd2-44ce-9d7b-8fee4363aebe",
+          "parentUUID": "c8acbb93-cef6-4c5b-9fd9-a10e9e81f97b",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [
+        {
+          "uuid": "904820dd-5238-49dc-a103-61b07bc754bb",
+          "title": "All Login Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login with Valid credentials",
+              "fullTitle": "All Login Tests Login with Valid credentials",
+              "timedOut": null,
+              "duration": 4152,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('admin123');\nloginPage.clickLogin();\ncy.get('.oxd-userdropdown-tab').click();",
+              "err": {},
+              "uuid": "bf0df7db-a57a-40e9-9fc4-77469478c8b3",
+              "parentUUID": "904820dd-5238-49dc-a103-61b07bc754bb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with Invalid username",
+              "fullTitle": "All Login Tests Login with Invalid username",
+              "timedOut": null,
+              "duration": 6577,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername('AdminPY');\nloginPage.enterPassword('admin123');\nloginPage.clickLogin();\ncy.get('.oxd-userdropdown-tab').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 3000ms: Expected to find element: `.oxd-userdropdown-tab`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 3000ms: Expected to find element: `.oxd-userdropdown-tab`, but never found it.\n    at Context.eval (webpack://py-cypress-hitesh-demo/./cypress/e2e/pomdemo.cy.ts:19:0)",
+                "diff": null
+              },
+              "uuid": "69be343d-11a8-49fb-94c1-4bb09c5fecdf",
+              "parentUUID": "904820dd-5238-49dc-a103-61b07bc754bb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bf0df7db-a57a-40e9-9fc4-77469478c8b3"
+          ],
+          "failures": [
+            "69be343d-11a8-49fb-94c1-4bb09c5fecdf"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10729,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [
+        "11318d9b-4fd2-44ce-9d7b-8fee4363aebe"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 10072,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "chart": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
