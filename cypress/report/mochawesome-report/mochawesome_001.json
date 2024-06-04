@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-06-03T07:30:14.456Z",
-    "end": "2024-06-03T07:30:23.605Z",
-    "duration": 9149,
+    "start": "2024-06-04T11:54:28.453Z",
+    "end": "2024-06-04T11:54:38.561Z",
+    "duration": 10108,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a42c3b87-7c12-40bb-ba95-e74927315b4a",
+      "uuid": "7fc5488e-de78-437f-8889-f23b08204ce6",
       "title": "",
       "fullFile": "cypress/e2e/basic.cy.ts",
       "file": "cypress/e2e/basic.cy.ts",
@@ -29,7 +29,7 @@
           "title": "Google Search",
           "fullTitle": "Google Search",
           "timedOut": null,
-          "duration": 7195,
+          "duration": 8195,
           "state": "passed",
           "speed": "medium",
           "pass": true,
@@ -38,20 +38,20 @@
           "context": null,
           "code": "cy.visit('https://google.com');\ncy.get('#APjFqb').type(\"YSS Mumbai\");\ncy.wait(3000);\ncy.contains('Google Search').click();\ncy.contains('Images').click();",
           "err": {},
-          "uuid": "504398c7-e21e-493b-b222-2b1dfcb51cdb",
-          "parentUUID": "a42c3b87-7c12-40bb-ba95-e74927315b4a",
+          "uuid": "c1c91716-5950-4034-b517-e972aee40021",
+          "parentUUID": "7fc5488e-de78-437f-8889-f23b08204ce6",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [],
       "passes": [
-        "504398c7-e21e-493b-b222-2b1dfcb51cdb"
+        "c1c91716-5950-4034-b517-e972aee40021"
       ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 7195,
+      "duration": 8195,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000

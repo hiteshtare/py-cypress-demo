@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2024-06-03T07:30:25.912Z",
-    "end": "2024-06-03T07:30:28.676Z",
-    "duration": 2764,
+    "start": "2024-06-04T11:54:40.698Z",
+    "end": "2024-06-04T11:54:43.615Z",
+    "duration": 2917,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c4d5f36e-3f86-4375-b6d5-a9575ab99a9f",
+      "uuid": "6d3d186b-e276-4066-a116-4ef382bcfffb",
       "title": "",
       "fullFile": "cypress/e2e/fileuploadanddownload.cy.ts",
       "file": "cypress/e2e/fileuploadanddownload.cy.ts",
@@ -29,7 +29,7 @@
           "title": "File Upload test",
           "fullTitle": "File Upload test",
           "timedOut": null,
-          "duration": 523,
+          "duration": 466,
           "state": "passed",
           "speed": "fast",
           "pass": true,
@@ -38,8 +38,8 @@
           "context": null,
           "code": "cy.visit(\"https://trytestingthis.netlify.app/\");\n// cy.get('#myfile').attachFile(\"example.json\");\ncy.get('#myfile').attachFile(\"self_near_tank.png\");",
           "err": {},
-          "uuid": "07f1ceb5-2ecb-4fc8-bdc9-6687a2697f74",
-          "parentUUID": "c4d5f36e-3f86-4375-b6d5-a9575ab99a9f",
+          "uuid": "67166302-5037-4892-b90d-a977a46ba880",
+          "parentUUID": "6d3d186b-e276-4066-a116-4ef382bcfffb",
           "isHook": false,
           "skipped": false
         },
@@ -47,7 +47,7 @@
           "title": "Download File test",
           "fullTitle": "Download File test",
           "timedOut": null,
-          "duration": 354,
+          "duration": 329,
           "state": "passed",
           "speed": "fast",
           "pass": true,
@@ -56,21 +56,21 @@
           "context": null,
           "code": "cy.downloadFile('https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg', './cypress/downloads', 'example.jpg');",
           "err": {},
-          "uuid": "5faa8a04-f4e8-44f2-9a27-8c7d0aa98eab",
-          "parentUUID": "c4d5f36e-3f86-4375-b6d5-a9575ab99a9f",
+          "uuid": "fe6be760-08bd-4d1a-aecf-893da7bf8352",
+          "parentUUID": "6d3d186b-e276-4066-a116-4ef382bcfffb",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [],
       "passes": [
-        "07f1ceb5-2ecb-4fc8-bdc9-6687a2697f74",
-        "5faa8a04-f4e8-44f2-9a27-8c7d0aa98eab"
+        "67166302-5037-4892-b90d-a977a46ba880",
+        "fe6be760-08bd-4d1a-aecf-893da7bf8352"
       ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 877,
+      "duration": 795,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000

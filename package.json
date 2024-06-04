@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "pretest": "rm -r cypress/report/**/*.json",
-    "test": "npx cypress run || npm run posttest",
+    "test": "npm run cypress-test || npm run posttest",
     "posttest": "npm run merge-reports && npm run generate-htmlreport",
     "hello": "Hello PY :-)",
-    "cy-test": "cypress run",
+    "cypress-test": "cypress run",
     "merge-reports": "npx mochawesome-merge 'cypress/report/mochawesome-report/*.json' > 'cypress/report/output.json'",
     "generate-htmlreport": "npx marge cypress/report/output.json"
 >>>>>>> f5c8a24 (#HTML Reports using Mochawesome Reporter)
