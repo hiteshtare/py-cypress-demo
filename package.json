@@ -4,12 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "test": "echo \"Error: no test specified\" && exit 1"
-=======
-    "pretest": "echo I am the preTest",
-    "posttest": "echo I am the postTest",
-    "test": "echo I am the Test",
+    "pretest": "rm -r cypress/report/**/*.json",
+    "test": "npx cypress run || npm run posttest",
+    "posttest": "npm run merge-reports && npm run generate-htmlreport",
     "hello": "Hello PY :-)",
     "cy-test": "cypress run",
     "merge-reports": "npx mochawesome-merge 'cypress/report/mochawesome-report/*.json' > 'cypress/report/output.json'",
