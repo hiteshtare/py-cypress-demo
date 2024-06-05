@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 3,
+    "tests": 1,
     "passes": 1,
     "pending": 0,
-    "failures": 2,
-    "start": "2024-06-04T11:54:45.872Z",
-    "end": "2024-06-04T11:55:03.581Z",
-    "duration": 17709,
-    "testsRegistered": 3,
-    "passPercent": 33.33333333333333,
+    "failures": 0,
+    "start": "2024-06-05T05:38:52.003Z",
+    "end": "2024-06-05T05:38:53.417Z",
+    "duration": 1414,
+    "testsRegistered": 1,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,110 +18,61 @@
   },
   "results": [
     {
-      "uuid": "47cb5e7e-a217-4d02-8fff-908387184e8f",
+      "uuid": "21e53cf3-0672-4b6e-8322-2edb77056381",
       "title": "",
-      "fullFile": "cypress/e2e/pomdemo.cy.ts",
-      "file": "cypress/e2e/pomdemo.cy.ts",
+      "fullFile": "cypress/e2e/spec.cy.js",
+      "file": "cypress/e2e/spec.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
-      "tests": [
-        {
-          "title": "Login with Invalid password",
-          "fullTitle": "Login with Invalid password",
-          "timedOut": null,
-          "duration": 6767,
-          "state": "failed",
-          "speed": null,
-          "pass": false,
-          "fail": true,
-          "pending": false,
-          "context": null,
-          "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('admin1234');\nloginPage.clickLogin();\ncy.get('.oxd-userdropdown-tab').click();",
-          "err": {
-            "message": "AssertionError: Timed out retrying after 3000ms: Expected to find element: `.oxd-userdropdown-tab`, but never found it.",
-            "estack": "AssertionError: Timed out retrying after 3000ms: Expected to find element: `.oxd-userdropdown-tab`, but never found it.\n    at Context.eval (webpack://py-cypress-hitesh-demo/./cypress/e2e/pomdemo.cy.ts:26:0)",
-            "diff": null
-          },
-          "uuid": "6dcd370f-6d2f-42b0-a8c4-38b7fe821458",
-          "parentUUID": "47cb5e7e-a217-4d02-8fff-908387184e8f",
-          "isHook": false,
-          "skipped": false
-        }
-      ],
+      "tests": [],
       "suites": [
         {
-          "uuid": "20e1bc5d-6abb-422c-b7a3-08caf0556d04",
-          "title": "All Login Tests",
+          "uuid": "2db81d3b-a20a-4af5-a660-16f7c53ec333",
+          "title": "template spec",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Login with Valid credentials",
-              "fullTitle": "All Login Tests Login with Valid credentials",
+              "title": "passes",
+              "fullTitle": "template spec passes",
               "timedOut": null,
-              "duration": 2919,
+              "duration": 240,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('admin123');\nloginPage.clickLogin();\ncy.get('.oxd-userdropdown-tab').click();",
+              "code": "cy.visit('https://example.cypress.io');",
               "err": {},
-              "uuid": "1c0a95f9-18bb-4c0a-9fa7-7bf530e5c352",
-              "parentUUID": "20e1bc5d-6abb-422c-b7a3-08caf0556d04",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Login with Invalid username",
-              "fullTitle": "All Login Tests Login with Invalid username",
-              "timedOut": null,
-              "duration": 5775,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "loginPage.enterUsername('AdminPY');\nloginPage.enterPassword('admin123');\nloginPage.clickLogin();\ncy.get('.oxd-userdropdown-tab').click();",
-              "err": {
-                "message": "AssertionError: Timed out retrying after 3000ms: Expected to find element: `.oxd-userdropdown-tab`, but never found it.",
-                "estack": "AssertionError: Timed out retrying after 3000ms: Expected to find element: `.oxd-userdropdown-tab`, but never found it.\n    at Context.eval (webpack://py-cypress-hitesh-demo/./cypress/e2e/pomdemo.cy.ts:19:0)",
-                "diff": null
-              },
-              "uuid": "6dabbdde-52a4-44b3-ae22-1e2c15263c3b",
-              "parentUUID": "20e1bc5d-6abb-422c-b7a3-08caf0556d04",
+              "uuid": "5d42e4e1-c530-462e-a1c6-ec3f942b1fed",
+              "parentUUID": "2db81d3b-a20a-4af5-a660-16f7c53ec333",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1c0a95f9-18bb-4c0a-9fa7-7bf530e5c352"
+            "5d42e4e1-c530-462e-a1c6-ec3f942b1fed"
           ],
-          "failures": [
-            "6dabbdde-52a4-44b3-ae22-1e2c15263c3b"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8694,
+          "duration": 240,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         }
       ],
       "passes": [],
-      "failures": [
-        "6dcd370f-6d2f-42b0-a8c4-38b7fe821458"
-      ],
+      "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 6767,
+      "duration": 0,
       "root": true,
-      "rootEmpty": false,
+      "rootEmpty": true,
       "_timeout": 2000
     }
   ],

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-06-04T11:54:24.321Z",
-    "end": "2024-06-04T11:54:26.204Z",
-    "duration": 1883,
+    "start": "2024-06-05T05:38:17.105Z",
+    "end": "2024-06-05T05:38:19.027Z",
+    "duration": 1922,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "cecfc1ff-cf0d-4801-8ba9-2b3af9c07138",
+      "uuid": "e4bb0024-f73c-4620-9e9f-6062eaf5fd40",
       "title": "",
       "fullFile": "cypress/e2e/assertionsdemo.cy.ts",
       "file": "cypress/e2e/assertionsdemo.cy.ts",
@@ -29,7 +29,7 @@
           "title": "Assertion Demo",
           "fullTitle": "Assertion Demo",
           "timedOut": null,
-          "duration": 709,
+          "duration": 488,
           "state": "passed",
           "speed": "fast",
           "pass": true,
@@ -38,20 +38,20 @@
           "context": null,
           "code": "cy.visit(\"https://example.cypress.io\");\ncy.contains('get').click();\ncy.get('#query-btn').should('contain', 'Button').and('have.class', 'query-btn').and('be.visible').and('be.enabled');\nexpect(true).to.be.true;\n// assert.equal(4, '4', 'NOT equal');\nassert.strictEqual(4, 4, 'NOT equal');",
           "err": {},
-          "uuid": "46a012c1-0e6f-4657-92c0-ebe7117027a8",
-          "parentUUID": "cecfc1ff-cf0d-4801-8ba9-2b3af9c07138",
+          "uuid": "2d812409-c019-48f0-825d-2c93e20b4d00",
+          "parentUUID": "e4bb0024-f73c-4620-9e9f-6062eaf5fd40",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [],
       "passes": [
-        "46a012c1-0e6f-4657-92c0-ebe7117027a8"
+        "2d812409-c019-48f0-825d-2c93e20b4d00"
       ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 709,
+      "duration": 488,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000

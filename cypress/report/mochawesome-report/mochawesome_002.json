@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 2,
-    "passes": 2,
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
     "pending": 0,
-    "failures": 0,
-    "start": "2024-06-04T11:54:40.698Z",
-    "end": "2024-06-04T11:54:43.615Z",
-    "duration": 2917,
-    "testsRegistered": 2,
-    "passPercent": 100,
+    "failures": 2,
+    "start": "2024-06-05T05:38:32.329Z",
+    "end": "2024-06-05T05:38:49.862Z",
+    "duration": 17533,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,59 +18,108 @@
   },
   "results": [
     {
-      "uuid": "6d3d186b-e276-4066-a116-4ef382bcfffb",
+      "uuid": "15af80c1-ff44-4990-ac3c-0460544af85b",
       "title": "",
-      "fullFile": "cypress/e2e/fileuploadanddownload.cy.ts",
-      "file": "cypress/e2e/fileuploadanddownload.cy.ts",
+      "fullFile": "cypress/e2e/pomdemo.cy.ts",
+      "file": "cypress/e2e/pomdemo.cy.ts",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [
         {
-          "title": "File Upload test",
-          "fullTitle": "File Upload test",
+          "title": "Login with Invalid password",
+          "fullTitle": "Login with Invalid password",
           "timedOut": null,
-          "duration": 466,
-          "state": "passed",
-          "speed": "fast",
-          "pass": true,
-          "fail": false,
+          "duration": 6697,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
           "pending": false,
           "context": null,
-          "code": "cy.visit(\"https://trytestingthis.netlify.app/\");\n// cy.get('#myfile').attachFile(\"example.json\");\ncy.get('#myfile').attachFile(\"self_near_tank.png\");",
-          "err": {},
-          "uuid": "67166302-5037-4892-b90d-a977a46ba880",
-          "parentUUID": "6d3d186b-e276-4066-a116-4ef382bcfffb",
-          "isHook": false,
-          "skipped": false
-        },
-        {
-          "title": "Download File test",
-          "fullTitle": "Download File test",
-          "timedOut": null,
-          "duration": 329,
-          "state": "passed",
-          "speed": "fast",
-          "pass": true,
-          "fail": false,
-          "pending": false,
-          "context": null,
-          "code": "cy.downloadFile('https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg', './cypress/downloads', 'example.jpg');",
-          "err": {},
-          "uuid": "fe6be760-08bd-4d1a-aecf-893da7bf8352",
-          "parentUUID": "6d3d186b-e276-4066-a116-4ef382bcfffb",
+          "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('admin1234');\nloginPage.clickLogin();\ncy.get('.oxd-userdropdown-tab').click();",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 3000ms: Expected to find element: `.oxd-userdropdown-tab`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 3000ms: Expected to find element: `.oxd-userdropdown-tab`, but never found it.\n    at Context.eval (webpack://py-cypress-hitesh-demo/./cypress/e2e/pomdemo.cy.ts:26:0)",
+            "diff": null
+          },
+          "uuid": "7c5222dc-e2c2-4bc8-8fdc-2dc0336776bf",
+          "parentUUID": "15af80c1-ff44-4990-ac3c-0460544af85b",
           "isHook": false,
           "skipped": false
         }
       ],
-      "suites": [],
-      "passes": [
-        "67166302-5037-4892-b90d-a977a46ba880",
-        "fe6be760-08bd-4d1a-aecf-893da7bf8352"
+      "suites": [
+        {
+          "uuid": "5278a6c4-aea4-4c0c-88a6-47e158b0f7fa",
+          "title": "All Login Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login with Valid credentials",
+              "fullTitle": "All Login Tests Login with Valid credentials",
+              "timedOut": null,
+              "duration": 2974,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('admin123');\nloginPage.clickLogin();\ncy.get('.oxd-userdropdown-tab').click();",
+              "err": {},
+              "uuid": "1c5f481a-5b17-42f5-a3dc-32e7ecff519d",
+              "parentUUID": "5278a6c4-aea4-4c0c-88a6-47e158b0f7fa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with Invalid username",
+              "fullTitle": "All Login Tests Login with Invalid username",
+              "timedOut": null,
+              "duration": 5584,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername('AdminPY');\nloginPage.enterPassword('admin123');\nloginPage.clickLogin();\ncy.get('.oxd-userdropdown-tab').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 3000ms: Expected to find element: `.oxd-userdropdown-tab`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 3000ms: Expected to find element: `.oxd-userdropdown-tab`, but never found it.\n    at Context.eval (webpack://py-cypress-hitesh-demo/./cypress/e2e/pomdemo.cy.ts:19:0)",
+                "diff": null
+              },
+              "uuid": "aa58359c-7cf7-4798-84fe-75b1ebd4cbb9",
+              "parentUUID": "5278a6c4-aea4-4c0c-88a6-47e158b0f7fa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1c5f481a-5b17-42f5-a3dc-32e7ecff519d"
+          ],
+          "failures": [
+            "aa58359c-7cf7-4798-84fe-75b1ebd4cbb9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8558,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
       ],
-      "failures": [],
+      "passes": [],
+      "failures": [
+        "7c5222dc-e2c2-4bc8-8fdc-2dc0336776bf"
+      ],
       "pending": [],
       "skipped": [],
-      "duration": 795,
+      "duration": 6697,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000
