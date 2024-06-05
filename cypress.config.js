@@ -5,16 +5,15 @@ module.exports = defineConfig({
     watchForFileChanges: true,
     defaultCommandTimeout: 3000,
     video: true,
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-    reporter: "mochawesome",
+    reporter: 'cypress-mochawesome-reporter',
     reporterOptions: {
-      reportDir: 'cypress/report/mochawesome-report',
-      chart:true,
-      overwrite: false,
-      html: false,
-      json: true,
+      charts: true,
+      reportPageTitle: 'PY - Cypress Test Reports',
+      embeddedScreenshots: true,
+      inlineAssets: true,
+    },
+    setupNodeEvents(on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on);
     }
   },
 });

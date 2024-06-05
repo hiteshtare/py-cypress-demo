@@ -26,13 +26,14 @@ describe('All Login Tests', () => {
   
     cy.get('.oxd-userdropdown-tab').click();
   });
+
+  it('Login with Invalid password', () => {
+    loginPage.enterUsername('Admin');
+    loginPage.enterPassword('admin1234');
+  
+    loginPage.clickLogin();
+  
+    cy.get('.oxd-userdropdown-tab').click();
+  });
 });
 
-it('Login with Invalid password', () => {
-  loginPage.enterUsername('Admin');
-  loginPage.enterPassword('admin1234');
-
-  loginPage.clickLogin();
-
-  cy.get('.oxd-userdropdown-tab').click();
-});
