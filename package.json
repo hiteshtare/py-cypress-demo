@@ -4,19 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pretest": "rm -r cypress/reports/**",
-    "test": "npm run cypress-test",
-    "cypress-test": "cypress run"
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:clear": "rm -r allure-results/** && rm -r allure-report/**",
+    "pretest": "npm run allure:clear",
+    "test": "npm run cypress-test || npm run posttest",
+    "cypress-test": "cypress run --env allure=true",
+    "posttest": "npm run allure:report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.10.0",
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "allure-cypress": "^3.0.0-beta.1",
+    "cypress": "^12.14.0",
     "cypress-mochawesome-reporter": "^3.8.2",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
+    "allure-commandline": "^2.29.0",
     "cypress-file-upload": "^5.0.8",
     "mochawesome": "^7.1.3"
   }
