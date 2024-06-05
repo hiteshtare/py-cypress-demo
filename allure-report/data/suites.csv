@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jun 05 12:54:54 IST 2024","Wed Jun 05 12:54:55 IST 2024","826","","","","","","Assertion Demo",""
+"passed","Wed Jun 05 12:55:34 IST 2024","Wed Jun 05 12:55:35 IST 2024","318","","template spec","","","","passes",""
+"failed","Wed Jun 05 12:55:18 IST 2024","Wed Jun 05 12:55:24 IST 2024","5807","","All Login Tests","","","","Login with Invalid username",""
+"passed","Wed Jun 05 12:55:14 IST 2024","Wed Jun 05 12:55:18 IST 2024","4587","","All Login Tests","","","","Login with Valid credentials",""
+"passed","Wed Jun 05 12:55:00 IST 2024","Wed Jun 05 12:55:09 IST 2024","8758","","","","","","Google Search",""
+"failed","Wed Jun 05 12:55:24 IST 2024","Wed Jun 05 12:55:30 IST 2024","5554","","All Login Tests","","","","Login with Invalid password",""
