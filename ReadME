@@ -1,11 +1,11 @@
 # master branch
 
-💻 Topics
-1.Assertions using Mocha
-2.Implementation Page Object Model design pattern
-3.Cypress config
-4.Working with Package.json
-5.HTML Reports using Mochawesome Reporter
-6.Beautiful Allure Reports for better analysis and deep dive 
-
 ## _[Allure Reports using Cypress](https://hiteshtare.github.io/py-cypress-hitesh-demo/#) - Hosted on Github pages._
+  
+### Topics 
+- Assertions using Mocha
+- Implementation Page Object Model design pattern
+- Cypress config
+- Working with Package.json
+- HTML Reports using Mochawesome Reporter
+- Beautiful Allure Reports for better analysis and deep dive 
