@@ -1,6 +1,6 @@
 # master branch
 
-## _[Allure Reports using Cypress](https://hiteshtare.github.io/py-cypress-hitesh-demo/#) - Hosted on Github pages._
+## _[Allure Reports using Cypress](https://hiteshtare.github.io/py-cypress-demo/#) - Hosted on Github pages._
   
 ### Topics 
 - Assertions using Mocha
